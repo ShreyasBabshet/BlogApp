@@ -1,0 +1,11 @@
+<form action="create_blog" method="POST">
+  {% csrf_token %}
+  <p>Enter Title</p>
+  <input type="text" name="title"> <br><br>
+  <textarea name="body" id="" cols="60" rows="30"></textarea> <br> <br>
+  <label for="images">Select image:</label>
+  <input type="file" id="" name="images" accept="image/*">
+   <br> <br>
+  <input type="datetime-local" name="created_at" id=""> <br> <br>
+  <input type="submit" value="submit">
+</form>
